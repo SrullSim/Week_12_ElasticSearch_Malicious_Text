@@ -1,3 +1,4 @@
 {
-  "URL_ELASTIC": "http://localhost:9200"
+  "URL_ELASTIC": "http://localhost:9200",
+  "MY_INDEX": "myindex"
 }

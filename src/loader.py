@@ -3,6 +3,8 @@ from pprint import pprint
 import pandas as pd
 from config.config import PATH_TO_DATA
 from config.config import PATH_TO_WEAPONS_LIST
+from config.config import MY_INDEX
+
 import csv
 
 
@@ -10,7 +12,7 @@ class Loader:
 
     def __init__(self):
         self.csv_data = self.load_csv()
-        self.data = self.to_elasticsearch_docs("myindex")
+        self.data = self.to_elasticsearch_docs(MY_INDEX)
         self.weapon_list = self.load_weapons_list()
 
 
